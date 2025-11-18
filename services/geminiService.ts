@@ -10,7 +10,7 @@ if (!API_KEY) {
     console.warn("API_KEY environment variable not set. Please set it to use the Gemini API.");
 }
 
-const ai = new GoogleGenAI({ apiKey: API_KEY! });
+const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_API_KEY });
 
 const COUNCIL_RESULT_SCHEMA = {
     type: Type.OBJECT,
