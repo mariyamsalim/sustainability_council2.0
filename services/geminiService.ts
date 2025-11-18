@@ -4,7 +4,7 @@ import type { CouncilResult, ImprovementSuggestion, SimpleExplanation } from '..
 
 // IMPORTANT: The API key must be set in the environment variables.
 // Do not hardcode the API key here.
-const API_KEY = AIzaSyD68r_H8z3tAWOGpy-k6ca5mfYWKFOOp-4;
+const API_KEY = import.meta.env.VITE_API_KEY;
 
 if (!API_KEY) {
     console.warn("API_KEY environment variable not set. Please set it to use the Gemini API.");
